@@ -1,0 +1,6 @@
+.vs
+packages
+obj
+bin
+/SensorDataSender/localAppSettings.json
+/SensorDataSenderApp/SensorDataSender/localAppSettings.json
