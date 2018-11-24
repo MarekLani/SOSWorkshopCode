@@ -1,11 +1,12 @@
 using Microsoft.Azure.Devices;
 using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;
 
-namespace AlertProcessing
+namespace AlertProcessingFunction
 {
     public static class AlertProcessingFunction
     {
@@ -28,9 +29,9 @@ namespace AlertProcessing
                 log.LogInformation("Response status: {0}, payload:", response.Status);
                 log.LogInformation(response.GetPayloadAsJson());
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                log.LogInformation(e.Message);
             }
         }
     }
