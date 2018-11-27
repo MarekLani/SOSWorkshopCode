@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "IoTHubConnectionString": "HostName=soselectronics.azure-devices.net;DeviceId=device1;SharedAccessKey=mjRu+O+kd4ON28RksnejDN++bAxEQ3dfanLrSsS38GY="
+  },
+  "SensorDataPath": "C:\\Users\\soselectronic\\data_logging"
+}
